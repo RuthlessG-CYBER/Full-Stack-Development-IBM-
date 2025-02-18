@@ -23,7 +23,7 @@ body {
     gap: 20px;
 }
 .content{
-    height:auto;
+    height: 100vh;
 }
 
 .cards {
