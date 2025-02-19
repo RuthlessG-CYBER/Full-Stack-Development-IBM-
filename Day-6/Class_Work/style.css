@@ -26,7 +26,7 @@
     border-radius: 50%;
     cursor: pointer;
 }
-#box{
+.box{
     height: 300px;
     width: 200px;
     border: 1px solid black;
@@ -34,9 +34,12 @@
     position: fixed;
     bottom: 110px;
     right: 10px;
+    display: none;
     
 }
-.chatbot:active{
-    background-color: red;
-    transition: none;
+#toggle:checked ~ .box {
+    display: block;
+}
+#toggle {
+    display: none;
 }
