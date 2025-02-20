@@ -1,0 +1,74 @@
+/* #parent{
+    width: 100%;
+    border: 1px solid gray;
+    height: 400px;
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#parent>div:nth-child(3){
+    background-color: blue;
+    grid-area: 1/2/5/4;
+}
+
+/* #parent>:nth-child(1){
+    grid-area: 1/1/2/3;
+    background-color: brown;
+} */
+
+/* #parent>div{
+    width: 200px;
+    border: 1px solid green;
+    height: 200px; 
+    background-color: aqua;
+    margin-right: 10px; 
+}*/
+:root{
+    --primary-color: Red;
+    --sccondery-color: Yellow;
+    --third-color: blue;
+
+}
+#hi{
+    width: 40%;
+    border: 1px solid gray;
+    height: 400px;
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 9px;
+}
+#hi>:nth-child(1){
+    background-color: var(--primary-color);
+    height: 100px;
+    width: 300px;
+}
+#hi>:nth-child(2){
+    background-color: var(--sccondery-color);
+    height: 100px;
+    width: 145px;
+}
+#hi>:nth-child(3){
+    background-color: var(--third-color);
+    height: 100px;
+    width: 145px;
+}
+#hi>:nth-child(4){
+    background-color: black;
+    height: 290px;
+    width: 145px;
+}
+#hi>:nth-child(5){
+    background-color: gray;
+    height: 290px;
+    width: 300px;
+}
+#hi>:nth-child(6){
+    background-color: pink;
+}
+#hi>:nth-child(7){
+    background-color: violet;
+}
+
