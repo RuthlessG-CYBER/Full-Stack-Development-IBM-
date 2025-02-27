@@ -3,14 +3,14 @@ let form=document.getElementById("userForm");
 form.addEventListener("submit",(e)=>{
     e.preventDefault();
     //console.log(e)
-    let FullNAme=document.getElementById("name").value;
+    let FullName=document.getElementById("name").value;
     let email=document.getElementById("email").value;
     let number=document.getElementById("number").value;
     let password=document.getElementById("password").value;
     let confirmpassword=document.getElementById("confirmpassword").value;
 
     let obj={
-        FullNAme,email,number,password,confirmpassword
+        FullName,email,number,password,confirmpassword
     }
 
     
@@ -22,7 +22,7 @@ form.addEventListener("submit",(e)=>{
     let tr=document.createElement("tr")
 
     let td1=document.createElement("td")
-    td1.innerText=obj.FullNAme;
+    td1.innerText=obj.FullName;
 
     let td2=document.createElement("td")
     td2.innerText=obj.email;
