@@ -83,9 +83,44 @@ let data = [
     { carName: "Nano", Engine: "1.0", Year: 2025, rating: 8.5 },
 ]
 
-let ans = data.sort((a, b) => {
-    if (a.rating > b.rating) return -1;
-    if (a.rating < b.rating) return 1;
-})
+// let ans = data.sort((a, b) => {
+//     if (a.rating > b.rating) return -1;
+//     if (a.rating < b.rating) return 1;
+// })
 
-console.log(ans);
+// let ans = data.sort((a, b) => a.carName.localeCompare(b.carName));
+
+// console.log(ans);
+
+// let l1 = [10, 2, 13, 22, 1, 65, 17, 8, 90, 1];
+
+// for (let i = 0; i < l1.length; i++) {
+//     for (let j = 0; j < l1.length+i; j++) {
+//         if (l1[j] > l1[j + 1]) {  // if j is greater than j+1, swap them
+//             let temp = l1[j];  // then store it into the temp
+//             l1[j] = l1[j + 1];   // if both is equall then j+1 value will be stored into j 
+//             l1[j + 1] = temp; // value stored into the temp
+//         }
+//     }
+// }
+
+// console.log(l1);
+
+
+
+// function Sorting(li) {
+//     for (let i = 0; i < li.length; i++) {
+//         for ( let j = 0; j < li.length-i; j++){
+//             if(li[j] > li[j+1]){
+//                 let temp = li[j];
+//                 li[j] = li[j+1];
+//                 li[j+1] = temp;
+//             }
+//         }
+//     }
+//     return li;
+// }
+
+// let li = [10, 2, 13, 22, 1, 65, 17, 8, 90, 1];
+// let sortedArray = Sorting(li);
+// console.log(sortedArray);
