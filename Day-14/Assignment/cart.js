@@ -73,7 +73,6 @@ function backToProducts() {
     window.location.href = "index.html";
 }
 
-
 document.addEventListener("DOMContentLoaded", () => {
     displayCart();
 });
