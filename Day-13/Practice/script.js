@@ -1,4 +1,4 @@
-[
+let data = [
     {
       "id": 1,
       "name": "Wireless Bluetooth Headphones",
@@ -160,3 +160,5 @@
       "image": "https://via.placeholder.com/150"
     }
   ]
+
+  console.log(data);
