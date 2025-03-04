@@ -116,3 +116,36 @@ input:focus{
     border-radius: 20px;
     text-align: center;
 }
+
+#checkout-form input{
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+#checkout-form textarea{
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+#placeorder{
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+}
+
+#placeorder:hover {
+    background-color: whitesmoke;
+    color: black;
+}
