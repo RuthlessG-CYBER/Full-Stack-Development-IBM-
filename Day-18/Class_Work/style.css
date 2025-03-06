@@ -1,0 +1,154 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: white;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    max-width: 500px;
+    margin: 0 ;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.user-icons {
+    display: flex;
+    align-items: center;
+}
+
+.user-icons>signin{
+    margin-right: 10px;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    height: 100px;
+}
+
+.user-icons img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.category-bar {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    scrollbar-width: none;
+}
+
+.category-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.category {
+    background-color: #f0f0f0;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.category:hover {
+    background-color: #ddd;
+}
+
+.category.active {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    height: 100vh;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin: 10px 0;
+}
+
+.sidebar-menu button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.sidebar-menu button:hover {
+    background-color: #ccc;
+}
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.video {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.video:hover {
+    transform: scale(1.05);
+}
+
+.video img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video p {
+    margin: 5px 0;
+    font-size: 14px;
+}
