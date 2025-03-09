@@ -2,19 +2,31 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px;
+    padding: 0px 10px 0px 10px;
     background-color: white;
 }
-
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.logo{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 .logo img {
-    width: 100px;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px 10px 5px 10px;
 }
 
 .search-bar {
     display: flex;
     flex-grow: 1;
     max-width: 500px;
-    margin: 0 ;
+    margin: 0 20px;
 }
 
 .search-bar input {
@@ -36,38 +48,37 @@
 .user-icons {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
+}
+
+.user-icons #signin {
+    margin-right: 10px;
+    color: 1px solid black;
+    font-size: 13px;
+    cursor: pointer;
+    width: 70px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: white;
 }
 
 .user-icons img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
 }
 
-.sign-in {
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    background-color: white;
-    cursor: pointer;
-    font-size: 14px;
-}
 
-.sign-in:hover {
-    background-color: #f0f0f0;
-}
 .category-bar {
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
-    padding: 10px 0;
+    padding: 0px 0;
     background-color: #fff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     scrollbar-width: none;
-    width: 100vw;
-    margin-left: -20px;
-    margin-right: -20px;
 }
 
 .category-bar::-webkit-scrollbar {
@@ -95,8 +106,12 @@
     color: white;
     font-weight: bold;
 }
+
 .container {
     display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .sidebar {
@@ -104,6 +119,7 @@
     background-color: #f4f4f4;
     padding: 10px;
     height: 100vh;
+    width: 100px;
 }
 
 .sidebar-menu {
@@ -128,6 +144,7 @@
 .sidebar-menu button:hover {
     background-color: #ccc;
 }
+
 .content {
     flex-grow: 1;
     padding: 20px;

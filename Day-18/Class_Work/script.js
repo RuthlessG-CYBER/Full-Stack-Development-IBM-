@@ -1,9 +1,9 @@
-let API_KEY = "AIzaSyA9kcuYPAneb2rpTnyDn0XvzPe8SiClAI8";
-
-async function getData() {
+let API_KEY = "AIzaSyDV6HPj7Ndyx7XqC9t-hfkseujknKxskDE";
+let videoContainer = document.getElementById("videos");
+async function getData(defaultTerm = "") {
     let searchInput = document.querySelector(".search-bar input");
-    let search_term = searchInput.value.trim();
-    
+    let search_term = searchInput.value.trim() || defaultTerm;
+
     if (!search_term) {
         console.log("Search term is empty");
         return;
@@ -13,19 +13,19 @@ async function getData() {
         let response = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(search_term)}&type=video&maxResults=20&key=${API_KEY}`);
         let data = await response.json();
         console.log(data);
-        if (data.items) {
-            displayVideos(data.items);
-        }
+        displayVideos(data.items);
     } catch (error) {
         console.error("Error fetching data", error);
     }
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    getData("trending");
+});
 document.querySelector(".search-bar button").addEventListener("click", getData);
 
 function displayVideos(videos) {
-    let videoContainer = document.getElementById("videos");
-    videoContainer.innerHTML = ""; // Clear previous results
+    videoContainer.innerHTML = "";
     
     videos.forEach(({ snippet, id }) => {
         let videobox = document.createElement("div");
@@ -46,7 +46,13 @@ function displayVideos(videos) {
         videobox.appendChild(channelTitle);
         
         videobox.onclick = () => {
-            window.open(`https://www.youtube.com/watch?v=${id.videoId}`, "_blank");
+            let videoData = {
+                videoId: id.videoId,
+                title: snippet.title,
+                channelTitle: snippet.channelTitle
+            };
+            localStorage.setItem("selectedVideo", JSON.stringify(videoData));
+            window.location.href = "video.html";
         };
         
         videoContainer.appendChild(videobox);

@@ -1,0 +1,44 @@
+#video-player{
+    height: 500px;
+    width: 60%;
+    border: 1px solid black;
+}
+
+#video-title{
+    font-size: 15px;
+    width: 60%;
+    max-lines: 1;
+    text-overflow: ellipsis;
+}
+
+#channel-title{
+    font-size: 13px;
+    width: 60%;
+    max-lines: 1;
+    text-overflow: ellipsis;
+    font-weight: normal;
+}
+
+#sub-div{
+    width: 14%;
+    display: flex;
+}
+
+#subscribe{
+    font-size: 13px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: Red;
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 25px;
+    height: 30px;
+    width: 100px;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
