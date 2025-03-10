@@ -178,3 +178,7 @@ body, html {
     margin: 5px 0;
     font-size: 14px;
 }
+
+.iframe1{
+    border-radius: 10px;
+}
