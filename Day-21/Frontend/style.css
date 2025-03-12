@@ -1,0 +1,23 @@
+#parentBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.parentBox {
+    height: 250px;
+    width: 100%;
+    max-width: 300px; 
+    box-shadow: 
+        rgba(0, 0, 0, 0.25) 0px 5px 15px, 
+        rgba(0, 0, 0, 0.12) 0px -5px 10px, 
+        rgba(0, 0, 0, 0.12) 0px 2px 4px, 
+        rgba(0, 0, 0, 0.17) 0px 5px 10px, 
+        rgba(0, 0, 0, 0.09) 0px -2px 4px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
