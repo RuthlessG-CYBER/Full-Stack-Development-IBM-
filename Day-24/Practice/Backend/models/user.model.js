@@ -16,8 +16,23 @@ const userSchema = mongoose.Schema({
     }
 });
 
+const loginSchema = mongoose.Schema({
+    email: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    password:{
+        type: String,
+        required: true,
+    }
+})
+
 const userModel = mongoose.model("user", userSchema);
 
+const loginModel = mongoose.model("login", loginSchema);
+
 module.exports = {
-    userModel
+    userModel,
+    loginModel
 }
